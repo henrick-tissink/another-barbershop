@@ -148,16 +148,17 @@ export function ContactSection() {
             <div className="w-full h-80 lg:h-full min-h-[450px] rounded-lg overflow-hidden border border-white/10">
               {/* Static map placeholder with styling that works */}
               <div className="relative w-full h-full bg-[#1a1a1a]">
-                {/* Map image from OpenStreetMap */}
+                {/* Google Maps embed */}
                 <iframe
-                  src={`https://www.openstreetmap.org/export/embed.html?bbox=26.0896%2C44.4328%2C26.0996%2C44.4428&layer=mapnik&marker=44.4378%2C26.0946`}
+                  src={`https://www.google.com/maps?q=${siteConfig.coordinates.lat},${siteConfig.coordinates.lng}&z=16&output=embed`}
                   width="100%"
                   height="100%"
                   style={{
                     border: 0,
-                    filter: 'grayscale(60%) brightness(0.8) contrast(1.1) invert(1) hue-rotate(180deg)',
+                    filter: 'grayscale(50%) brightness(0.85) contrast(1.1)',
                   }}
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                   title={t('mapTitle')}
                 />
 
