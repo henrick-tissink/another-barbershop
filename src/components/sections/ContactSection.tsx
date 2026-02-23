@@ -150,7 +150,7 @@ export function ContactSection() {
               <div className="relative w-full h-full bg-[#1a1a1a]">
                 {/* Google Maps embed */}
                 <iframe
-                  src={`https://www.google.com/maps?q=${siteConfig.coordinates.lat},${siteConfig.coordinates.lng}&z=16&output=embed`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(`${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.country}`)}&z=17&output=embed`}
                   width="100%"
                   height="100%"
                   style={{
