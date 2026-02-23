@@ -155,7 +155,7 @@ export function ContactSection() {
                   height="100%"
                   style={{
                     border: 0,
-                    filter: 'grayscale(100%) brightness(0.4) contrast(1.2)',
+                    filter: 'grayscale(60%) brightness(0.8) contrast(1.1) invert(1) hue-rotate(180deg)',
                   }}
                   loading="lazy"
                   title={t('mapTitle')}
