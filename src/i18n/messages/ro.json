@@ -15,12 +15,15 @@
     "bookNow": "Programare",
     "bookYourCut": "Programează-te",
     "bookAppointment": "Programează-te",
+    "bookWith": "Programare la {name}",
     "whatsapp": "WhatsApp",
     "scroll": "Derulează",
     "learnMore": "Află mai multe",
     "viewAll": "Vezi toate",
     "currency": "RON",
-    "minutes": "min"
+    "minutes": "min",
+    "yearsShort": "ani",
+    "closed": "Închis"
   },
   "hero": {
     "tagline": "Facem lucrurile cum trebuie."
@@ -29,41 +32,39 @@
     "label": "Despre noi",
     "title": "Nu promitem. Livrăm.",
     "description": "Another Barbershop nu e despre hype sau tendințe trecătoare. E despre a face lucrurile cum trebuie, de fiecare dată. Vino pentru tunsoare, rămâi pentru experiență.",
-    "foundedLabel": "Fondat",
-    "foundedValue": "2020",
     "experienceLabel": "Experiență",
     "experienceValue": "6+ ani",
-    "focusLabel": "Focus",
-    "focusValue": "Calitate"
+    "clientsLabel": "Clienți mulțumiți",
+    "clientsValue": "1000+"
   },
   "services": {
     "label": "Servicii",
     "title": "Ce oferim",
     "description": "Servicii simple, executate impecabil. Fără compromisuri.",
     "items": {
-      "haircut": {
-        "name": "Tunsoare",
-        "description": "Tunsoare clasică sau modernă, adaptată stilului tău"
+      "classic-haircut": {
+        "name": "The Classic",
+        "description": "Consultație, tunsoare și styling. Experiența completă."
       },
-      "haircutBeard": {
-        "name": "Tunsoare + Barbă",
-        "description": "Pachet complet pentru un look îngrijit"
+      "beard-trim": {
+        "name": "Aranjare Barbă",
+        "description": "Conturare, linii precise și îngrijire. Curat și definit."
       },
-      "beard": {
-        "name": "Aranjare barbă",
-        "description": "Conturare și stilizare pentru barba perfectă"
+      "full-service": {
+        "name": "Pachet Complet",
+        "description": "Tunsoare și barbă împreună. Cea mai populară alegere."
       },
-      "shave": {
-        "name": "Bărbierit tradițional",
-        "description": "Bărbierit clasic cu brici și prosop cald"
+      "buzz-cut": {
+        "name": "Buzz Cut",
+        "description": "Lucru precis cu mașina. Simplu. Făcut cum trebuie."
       },
-      "junior": {
-        "name": "Tunsoare junior",
-        "description": "Pentru cei mici, până la 12 ani"
+      "kids-cut": {
+        "name": "Tunsoare Junior",
+        "description": "Pentru micii domni. Până la 12 ani."
       },
-      "styling": {
-        "name": "Styling",
-        "description": "Coafat și aranjare pentru ocazii speciale"
+      "hot-towel-shave": {
+        "name": "Bărbierit cu Prosop Cald",
+        "description": "Brici tradițional. O experiență autentică."
       }
     }
   },
@@ -71,8 +72,17 @@
     "label": "Echipa",
     "title": "Cine suntem",
     "description": "Frizeri cu experiență, pasionați de meseria lor.",
-    "experience": "{years} ani experiență",
-    "book": "Programare la {name}"
+    "roles": {
+      "founder": "Fondator & Frizer Senior",
+      "senior": "Frizer Senior",
+      "barber": "Frizer"
+    },
+    "quotes": {
+      "alexandru": "Linii curate și conversație sinceră. Asta e formula.",
+      "mihai": "Fiecare client merită să plece simțindu-se pregătit pentru orice.",
+      "andrei": "Muzică bună, mâini sigure, fără grabă. Așa lucrăm aici.",
+      "radu": "Detaliile contează. Linia, degradeul, finisajul. Toate contează."
+    }
   },
   "gallery": {
     "label": "Galerie",

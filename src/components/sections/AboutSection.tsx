@@ -60,8 +60,8 @@ export function AboutSection() {
                 <div className="text-white/40 text-sm mt-2 tracking-wide">{t('experienceLabel')}</div>
               </div>
               <div>
-                <div className="text-5xl font-light text-[var(--color-burgundy)]">1000+</div>
-                <div className="text-white/40 text-sm mt-2 tracking-wide">{t('focusValue')}</div>
+                <div className="text-5xl font-light text-[var(--color-burgundy)]">{t('clientsValue')}</div>
+                <div className="text-white/40 text-sm mt-2 tracking-wide">{t('clientsLabel')}</div>
               </div>
             </div>
           </motion.div>

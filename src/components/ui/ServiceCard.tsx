@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils'
 import { Service } from '@/types'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 interface ServiceCardProps {
   service: Service
@@ -10,6 +11,9 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ service, className }: ServiceCardProps) {
+  const t = useTranslations('services')
+  const tCommon = useTranslations('common')
+
   return (
     <motion.div
       className={cn(
@@ -31,13 +35,13 @@ export function ServiceCard({ service, className }: ServiceCardProps) {
         <div className="flex items-start gap-3 mb-4">
           <div className="w-2 h-2 rounded-full bg-[var(--color-burgundy)] mt-2 shadow-[0_0_8px_rgba(114,47,55,0.5)]" />
           <h3 className="text-xl font-medium text-white">
-            {service.name}
+            {t(`items.${service.id}.name`)}
           </h3>
         </div>
 
         {/* Description */}
         <p className="text-white/50 text-sm leading-relaxed flex-1 pl-5">
-          {service.description}
+          {t(`items.${service.id}.description`)}
         </p>
 
         {/* Price and duration */}
@@ -51,7 +55,7 @@ export function ServiceCard({ service, className }: ServiceCardProps) {
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 6v6l4 2" />
               </svg>
-              {service.duration} min
+              {service.duration} {tCommon('minutes')}
             </span>
           )}
         </div>

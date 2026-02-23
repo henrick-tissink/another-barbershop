@@ -95,7 +95,7 @@ export function ContactSection() {
                 </div>
                 <div className="flex justify-between max-w-sm">
                   <span className="text-white text-lg">{t('sunday')}</span>
-                  <span className="text-white/50 text-lg">{siteConfig.hours.sunday}</span>
+                  <span className="text-white/50 text-lg">{t('closed')}</span>
                 </div>
               </div>
             </div>

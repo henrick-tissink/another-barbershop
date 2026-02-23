@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
@@ -15,7 +15,9 @@ type Props = {
 }
 
 // JSON-LD Schema for Local Business SEO
-function LocalBusinessSchema() {
+async function LocalBusinessSchema({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: 'services' })
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BarberShop',
@@ -61,8 +63,8 @@ function LocalBusinessSchema() {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: service.name,
-          description: service.description,
+          name: t(`items.${service.id}.name`),
+          description: t(`items.${service.id}.description`),
         },
         price: service.price,
         priceCurrency: 'RON',
@@ -86,7 +88,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <LocalBusinessSchema />
+      <LocalBusinessSchema locale={locale} />
       <Header />
       <main>
         <HeroSection />

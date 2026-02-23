@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import { TeamMember } from '@/types'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Button } from './Button'
 
 interface TeamCardProps {
@@ -21,6 +22,9 @@ function getInitials(name: string): string {
 }
 
 export function TeamCard({ member, className }: TeamCardProps) {
+  const t = useTranslations('team')
+  const tCommon = useTranslations('common')
+
   return (
     <motion.div
       className={cn(
@@ -78,7 +82,7 @@ export function TeamCard({ member, className }: TeamCardProps) {
         {/* Years badge */}
         <div className="absolute top-4 right-4 bg-[var(--color-burgundy)]/90 backdrop-blur-sm px-3 py-1.5 rounded-sm">
           <span className="text-white text-xs font-semibold">
-            {member.yearsExperience}+ yrs
+            {member.yearsExperience}+ {tCommon('yearsShort')}
           </span>
         </div>
       </div>
@@ -89,16 +93,14 @@ export function TeamCard({ member, className }: TeamCardProps) {
           {member.name}
         </h3>
         <p className="text-[var(--color-burgundy)] text-sm font-medium mb-4">
-          {member.role}
+          {t(`roles.${member.roleKey}`)}
         </p>
 
-        {member.quote && (
-          <blockquote className="relative pl-4 border-l-2 border-[var(--color-burgundy)]/30 mb-5">
-            <p className="text-white/40 text-sm italic leading-relaxed line-clamp-2">
-              &ldquo;{member.quote}&rdquo;
-            </p>
-          </blockquote>
-        )}
+        <blockquote className="relative pl-4 border-l-2 border-[var(--color-burgundy)]/30 mb-5">
+          <p className="text-white/40 text-sm italic leading-relaxed line-clamp-2">
+            &ldquo;{t(`quotes.${member.id}`)}&rdquo;
+          </p>
+        </blockquote>
 
         {/* Booking Button */}
         <div className="mt-auto pt-4 border-t border-white/5">
@@ -108,7 +110,7 @@ export function TeamCard({ member, className }: TeamCardProps) {
             size="sm"
             className="w-full text-xs hover:shadow-lg hover:shadow-[var(--color-burgundy)]/20"
           >
-            Book with {member.name.split(' ')[0]}
+            {tCommon('bookWith', { name: member.name.split(' ')[0] })}
           </Button>
         </div>
       </div>

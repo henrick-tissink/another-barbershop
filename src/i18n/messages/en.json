@@ -15,12 +15,15 @@
     "bookNow": "Book Now",
     "bookYourCut": "Book Your Cut",
     "bookAppointment": "Book Your Appointment",
+    "bookWith": "Book with {name}",
     "whatsapp": "WhatsApp",
     "scroll": "Scroll",
     "learnMore": "Learn More",
     "viewAll": "View All",
     "currency": "RON",
-    "minutes": "min"
+    "minutes": "min",
+    "yearsShort": "yrs",
+    "closed": "Closed"
   },
   "hero": {
     "tagline": "Doing things right."
@@ -29,41 +32,39 @@
     "label": "About",
     "title": "We don't promise. We deliver.",
     "description": "Another Barbershop isn't about hype or passing trends. It's about doing things right, every single time. Come for the cut, stay for the experience.",
-    "foundedLabel": "Founded",
-    "foundedValue": "2020",
     "experienceLabel": "Experience",
     "experienceValue": "6+ years",
-    "focusLabel": "Focus",
-    "focusValue": "Quality"
+    "clientsLabel": "Happy clients",
+    "clientsValue": "1000+"
   },
   "services": {
     "label": "Services",
     "title": "What we offer",
     "description": "Simple services, flawlessly executed. No compromises.",
     "items": {
-      "haircut": {
-        "name": "Haircut",
-        "description": "Classic or modern haircut, tailored to your style"
+      "classic-haircut": {
+        "name": "The Classic",
+        "description": "Consultation, cut, and styling. The full experience."
       },
-      "haircutBeard": {
-        "name": "Haircut + Beard",
-        "description": "Complete package for a polished look"
+      "beard-trim": {
+        "name": "Beard Work",
+        "description": "Shaping, lining, and conditioning. Sharp and clean."
       },
-      "beard": {
-        "name": "Beard trim",
-        "description": "Shaping and styling for the perfect beard"
+      "full-service": {
+        "name": "The Works",
+        "description": "Haircut and beard trim together. Our most popular choice."
       },
-      "shave": {
-        "name": "Traditional shave",
-        "description": "Classic straight razor shave with hot towel"
+      "buzz-cut": {
+        "name": "Clean Buzz",
+        "description": "Precise clipper work. Simple. Done right."
       },
-      "junior": {
-        "name": "Junior haircut",
-        "description": "For the little ones, up to 12 years old"
+      "kids-cut": {
+        "name": "Junior Cut",
+        "description": "For the young gentlemen. Ages 12 and under."
       },
-      "styling": {
-        "name": "Styling",
-        "description": "Hair styling for special occasions"
+      "hot-towel-shave": {
+        "name": "Hot Towel Shave",
+        "description": "Traditional straight razor. A proper experience."
       }
     }
   },
@@ -71,8 +72,17 @@
     "label": "Team",
     "title": "Who we are",
     "description": "Experienced barbers, passionate about their craft.",
-    "experience": "{years} years experience",
-    "book": "Book with {name}"
+    "roles": {
+      "founder": "Founder & Senior Barber",
+      "senior": "Senior Barber",
+      "barber": "Barber"
+    },
+    "quotes": {
+      "alexandru": "Clean lines and honest conversation. That's the formula.",
+      "mihai": "Every client deserves to walk out feeling ready for anything.",
+      "andrei": "Good music, steady hands, no rush. That's how we work here.",
+      "radu": "Details matter. The lineup, the blend, the finish. It all counts."
+    }
   },
   "gallery": {
     "label": "Gallery",

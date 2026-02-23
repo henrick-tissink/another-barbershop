@@ -1,7 +1,5 @@
 export interface Service {
   id: string
-  name: string
-  description: string
   price: number
   currency: 'RON'
   duration?: number
@@ -10,9 +8,8 @@ export interface Service {
 export interface TeamMember {
   id: string
   name: string
-  role: string
+  roleKey: 'founder' | 'senior' | 'barber'
   yearsExperience: number
-  quote: string
   image: string | null
   bookingUrl: string
 }
@@ -52,6 +49,7 @@ export interface SiteConfig {
 }
 
 export interface NavItem {
+  key: string
   label: string
   href: string
 }
