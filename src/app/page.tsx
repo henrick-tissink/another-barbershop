@@ -1,65 +1,92 @@
-import Image from "next/image";
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
+import { HeroSection } from '@/components/sections/HeroSection'
+import { AboutSection } from '@/components/sections/AboutSection'
+import { ServicesSection } from '@/components/sections/ServicesSection'
+import { TeamSection } from '@/components/sections/TeamSection'
+import { GallerySection } from '@/components/sections/GallerySection'
+import { ContactSection } from '@/components/sections/ContactSection'
+import { siteConfig } from '@/data/siteConfig'
+import { services } from '@/data/services'
 
-export default function Home() {
+// JSON-LD Schema for Local Business SEO
+function LocalBusinessSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BarberShop',
+    '@id': 'https://anotherbarbershop.ro/#barbershop',
+    name: siteConfig.name,
+    description:
+      'Premium barbershop in București offering expert haircuts, beard trims, and grooming services.',
+    url: 'https://anotherbarbershop.ro',
+    telephone: siteConfig.phone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      postalCode: siteConfig.address.postalCode,
+      addressCountry: 'RO',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: siteConfig.coordinates.lat,
+      longitude: siteConfig.coordinates.lng,
+    },
+    image: 'https://anotherbarbershop.ro/images/og-image.jpg',
+    priceRange: '$$',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '10:00',
+        closes: '20:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '10:00',
+        closes: '18:00',
+      },
+    ],
+    sameAs: [siteConfig.social.instagram].filter(Boolean),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Barbershop Services',
+      itemListElement: services.map((service) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: service.name,
+          description: service.description,
+        },
+        price: service.price,
+        priceCurrency: 'RON',
+      })),
+    },
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+export default function HomePage() {
+  return (
+    <>
+      <LocalBusinessSchema />
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <TeamSection />
+        <GallerySection />
+        <ContactSection />
       </main>
-    </div>
-  );
+      <Footer />
+    </>
+  )
 }
