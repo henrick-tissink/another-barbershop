@@ -70,13 +70,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: '/images/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: 'Another Barbershop - Premium Barbershop in București',
+          alt: t.ogImageAlt,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Another Barbershop | București',
+      title: t.title,
       description: t.description,
     },
     robots: {

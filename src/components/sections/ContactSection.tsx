@@ -158,7 +158,7 @@ export function ContactSection() {
                     filter: 'grayscale(100%) brightness(0.4) contrast(1.2)',
                   }}
                   loading="lazy"
-                  title="Another Barbershop Location"
+                  title={t('mapTitle')}
                 />
 
                 {/* Overlay with location pin */}

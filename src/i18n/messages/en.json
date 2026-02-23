@@ -2,7 +2,8 @@
   "metadata": {
     "title": "Another Barbershop | Premium Barbershop in București",
     "titleTemplate": "{page} | Another Barbershop",
-    "description": "Another Barbershop in București - Not about hype, just doing things right. Expert haircuts, beard trims, and grooming services by skilled barbers with 6+ years experience."
+    "description": "Another Barbershop in București - Not about hype, just doing things right. Expert haircuts, beard trims, and grooming services by skilled barbers with 6+ years experience.",
+    "ogImageAlt": "Another Barbershop - Premium Barbershop in București"
   },
   "nav": {
     "about": "About",
@@ -99,7 +100,8 @@
     "weekdays": "Monday - Friday",
     "saturday": "Saturday",
     "sunday": "Sunday",
-    "closed": "Closed"
+    "closed": "Closed",
+    "mapTitle": "Another Barbershop Location"
   },
   "footer": {
     "tagline": "Simple. Clean. Professional.",

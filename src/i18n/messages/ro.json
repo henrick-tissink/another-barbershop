@@ -2,7 +2,8 @@
   "metadata": {
     "title": "Another Barbershop | Frizerie Premium în București",
     "titleTemplate": "{page} | Another Barbershop",
-    "description": "Another Barbershop în București - Nu e despre hype, ci despre a face lucrurile cum trebuie. Tunsori, aranjare barbă și servicii de îngrijire de la frizeri cu peste 6 ani experiență."
+    "description": "Another Barbershop în București - Nu e despre hype, ci despre a face lucrurile cum trebuie. Tunsori, aranjare barbă și servicii de îngrijire de la frizeri cu peste 6 ani experiență.",
+    "ogImageAlt": "Another Barbershop - Frizerie Premium în București"
   },
   "nav": {
     "about": "Despre noi",
@@ -99,7 +100,8 @@
     "weekdays": "Luni - Vineri",
     "saturday": "Sâmbătă",
     "sunday": "Duminică",
-    "closed": "Închis"
+    "closed": "Închis",
+    "mapTitle": "Locația Another Barbershop"
   },
   "footer": {
     "tagline": "Simplu. Curat. Profesional.",
