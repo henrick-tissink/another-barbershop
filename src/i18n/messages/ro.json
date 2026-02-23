@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Another Barbershop | Frizerie Premium în București",
+    "titleTemplate": "{page} | Another Barbershop",
+    "description": "Another Barbershop în București - Nu e despre hype, ci despre a face lucrurile cum trebuie. Tunsori, aranjare barbă și servicii de îngrijire de la frizeri cu peste 6 ani experiență."
+  },
+  "nav": {
+    "about": "Despre noi",
+    "services": "Servicii",
+    "team": "Echipa",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+  "common": {
+    "bookNow": "Programare",
+    "bookYourCut": "Programează-te",
+    "bookAppointment": "Programează-te",
+    "whatsapp": "WhatsApp",
+    "scroll": "Derulează",
+    "learnMore": "Află mai multe",
+    "viewAll": "Vezi toate",
+    "currency": "RON",
+    "minutes": "min"
+  },
+  "hero": {
+    "tagline": "Facem lucrurile cum trebuie."
+  },
+  "about": {
+    "label": "Despre noi",
+    "title": "Nu promitem. Livrăm.",
+    "description": "Another Barbershop nu e despre hype sau tendințe trecătoare. E despre a face lucrurile cum trebuie, de fiecare dată. Vino pentru tunsoare, rămâi pentru experiență.",
+    "foundedLabel": "Fondat",
+    "foundedValue": "2020",
+    "experienceLabel": "Experiență",
+    "experienceValue": "6+ ani",
+    "focusLabel": "Focus",
+    "focusValue": "Calitate"
+  },
+  "services": {
+    "label": "Servicii",
+    "title": "Ce oferim",
+    "description": "Servicii simple, executate impecabil. Fără compromisuri.",
+    "items": {
+      "haircut": {
+        "name": "Tunsoare",
+        "description": "Tunsoare clasică sau modernă, adaptată stilului tău"
+      },
+      "haircutBeard": {
+        "name": "Tunsoare + Barbă",
+        "description": "Pachet complet pentru un look îngrijit"
+      },
+      "beard": {
+        "name": "Aranjare barbă",
+        "description": "Conturare și stilizare pentru barba perfectă"
+      },
+      "shave": {
+        "name": "Bărbierit tradițional",
+        "description": "Bărbierit clasic cu brici și prosop cald"
+      },
+      "junior": {
+        "name": "Tunsoare junior",
+        "description": "Pentru cei mici, până la 12 ani"
+      },
+      "styling": {
+        "name": "Styling",
+        "description": "Coafat și aranjare pentru ocazii speciale"
+      }
+    }
+  },
+  "team": {
+    "label": "Echipa",
+    "title": "Cine suntem",
+    "description": "Frizeri cu experiență, pasionați de meseria lor.",
+    "experience": "{years} ani experiență",
+    "book": "Programare la {name}"
+  },
+  "gallery": {
+    "label": "Galerie",
+    "title": "Lucrările noastre",
+    "description": "Rezultate care vorbesc de la sine."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Unde ne găsești",
+    "description": "Te așteptăm cu drag.",
+    "address": "Adresă",
+    "hours": "Program",
+    "phone": "Telefon",
+    "weekdays": "Luni - Vineri",
+    "saturday": "Sâmbătă",
+    "sunday": "Duminică",
+    "closed": "Închis"
+  },
+  "footer": {
+    "tagline": "Simplu. Curat. Profesional.",
+    "description": "Locul în care revii cu plăcere.",
+    "navigate": "Navigare",
+    "contact": "Contact",
+    "rights": "Toate drepturile rezervate.",
+    "signature": "Facem lucrurile cum trebuie."
+  }
+}

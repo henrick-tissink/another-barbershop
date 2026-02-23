@@ -28,9 +28,9 @@ export const siteConfig: SiteConfig = {
 }
 
 export const navItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Team', href: '#team' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Contact', href: '#contact' },
+  { key: 'about', label: 'About', href: '#about' },
+  { key: 'services', label: 'Services', href: '#services' },
+  { key: 'team', label: 'Team', href: '#team' },
+  { key: 'gallery', label: 'Gallery', href: '#gallery' },
+  { key: 'contact', label: 'Contact', href: '#contact' },
 ]

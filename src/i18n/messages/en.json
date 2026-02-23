@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Another Barbershop | Premium Barbershop in București",
+    "titleTemplate": "{page} | Another Barbershop",
+    "description": "Another Barbershop in București - Not about hype, just doing things right. Expert haircuts, beard trims, and grooming services by skilled barbers with 6+ years experience."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "bookYourCut": "Book Your Cut",
+    "bookAppointment": "Book Your Appointment",
+    "whatsapp": "WhatsApp",
+    "scroll": "Scroll",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "currency": "RON",
+    "minutes": "min"
+  },
+  "hero": {
+    "tagline": "Doing things right."
+  },
+  "about": {
+    "label": "About",
+    "title": "We don't promise. We deliver.",
+    "description": "Another Barbershop isn't about hype or passing trends. It's about doing things right, every single time. Come for the cut, stay for the experience.",
+    "foundedLabel": "Founded",
+    "foundedValue": "2020",
+    "experienceLabel": "Experience",
+    "experienceValue": "6+ years",
+    "focusLabel": "Focus",
+    "focusValue": "Quality"
+  },
+  "services": {
+    "label": "Services",
+    "title": "What we offer",
+    "description": "Simple services, flawlessly executed. No compromises.",
+    "items": {
+      "haircut": {
+        "name": "Haircut",
+        "description": "Classic or modern haircut, tailored to your style"
+      },
+      "haircutBeard": {
+        "name": "Haircut + Beard",
+        "description": "Complete package for a polished look"
+      },
+      "beard": {
+        "name": "Beard trim",
+        "description": "Shaping and styling for the perfect beard"
+      },
+      "shave": {
+        "name": "Traditional shave",
+        "description": "Classic straight razor shave with hot towel"
+      },
+      "junior": {
+        "name": "Junior haircut",
+        "description": "For the little ones, up to 12 years old"
+      },
+      "styling": {
+        "name": "Styling",
+        "description": "Hair styling for special occasions"
+      }
+    }
+  },
+  "team": {
+    "label": "Team",
+    "title": "Who we are",
+    "description": "Experienced barbers, passionate about their craft.",
+    "experience": "{years} years experience",
+    "book": "Book with {name}"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Our work",
+    "description": "Results that speak for themselves."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Find Us",
+    "description": "We'd love to see you.",
+    "address": "Address",
+    "hours": "Hours",
+    "phone": "Phone",
+    "weekdays": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "footer": {
+    "tagline": "Simple. Clean. Professional.",
+    "description": "The kind of place you come back to.",
+    "navigate": "Navigate",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "signature": "Doing things right."
+  }
+}

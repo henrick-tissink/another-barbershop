@@ -3,12 +3,24 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { navItems, siteConfig } from '@/data/siteConfig'
+import { useTranslations } from 'next-intl'
+import { siteConfig } from '@/data/siteConfig'
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher'
 import MobileMenu from './MobileMenu'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const t = useTranslations('nav')
+  const tCommon = useTranslations('common')
+
+  const navItems = [
+    { label: t('about'), href: '#about' },
+    { label: t('services'), href: '#services' },
+    { label: t('team'), href: '#team' },
+    { label: t('gallery'), href: '#gallery' },
+    { label: t('contact'), href: '#contact' },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +60,7 @@ export default function Header() {
           }}
         >
           <div className="flex items-center justify-between h-20 lg:h-24">
-            {/* Logo - BIGGER */}
+            {/* Logo */}
             <a
               href="#"
               onClick={(e) => {
@@ -82,15 +94,19 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Book Now Button & Mobile Menu Toggle */}
-            <div className="flex items-center gap-4">
+            {/* Language Switcher, Book Now Button & Mobile Menu Toggle */}
+            <div className="flex items-center gap-6">
+              <div className="hidden lg:block">
+                <LanguageSwitcher />
+              </div>
+
               <a
                 href={siteConfig.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden lg:inline-flex px-6 py-3 text-sm font-medium tracking-wide rounded-sm bg-[var(--color-burgundy)] text-white hover:bg-[var(--color-burgundy-light)] transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-burgundy)]/20"
               >
-                Book Now
+                {tCommon('bookNow')}
               </a>
 
               {/* Hamburger Menu - Mobile */}

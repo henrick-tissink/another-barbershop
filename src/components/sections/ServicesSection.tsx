@@ -2,12 +2,14 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { useTranslations } from 'next-intl'
 import { ServiceCard } from '@/components/ui/ServiceCard'
 import { services } from '@/data/services'
 
 export function ServicesSection() {
   const sectionRef = useRef(null)
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' })
+  const t = useTranslations('services')
 
   return (
     <section
@@ -41,15 +43,15 @@ export function ServicesSection() {
           <div className="flex items-center justify-center gap-6 mb-6">
             <div className="w-12 h-[2px] bg-white/20" />
             <span className="text-[var(--color-burgundy)] text-sm tracking-[0.25em] uppercase font-semibold">
-              Services
+              {t('label')}
             </span>
             <div className="w-12 h-[2px] bg-white/20" />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight">
-            Our Services
+            {t('title')}
           </h2>
           <p className="mt-6 text-white/40 text-lg max-w-xl mx-auto">
-            Quality takes time. Every service includes a consultation.
+            {t('description')}
           </p>
           {/* The Steady Line - centered, with glow */}
           <div className="w-16 h-[3px] bg-[var(--color-burgundy)] mx-auto mt-10 shadow-[0_0_15px_rgba(114,47,55,0.4)]" />

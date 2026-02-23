@@ -2,10 +2,12 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { useTranslations } from 'next-intl'
 
 export function GallerySection() {
   const sectionRef = useRef(null)
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' })
+  const t = useTranslations('gallery')
 
   // Placeholder grid items with varying sizes
   const placeholderItems = [
@@ -38,15 +40,15 @@ export function GallerySection() {
           <div className="flex items-center justify-center gap-6 mb-6">
             <div className="w-12 h-[2px] bg-white/20" />
             <span className="text-[var(--color-burgundy)] text-sm tracking-[0.25em] uppercase font-semibold">
-              Gallery
+              {t('label')}
             </span>
             <div className="w-12 h-[2px] bg-white/20" />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight">
-            Our Work
+            {t('title')}
           </h2>
           <p className="mt-6 text-white/40 text-lg max-w-xl mx-auto">
-            A glimpse into the craft.
+            {t('description')}
           </p>
           {/* The Steady Line - centered, with glow */}
           <div className="w-16 h-[3px] bg-[var(--color-burgundy)] mx-auto mt-10 shadow-[0_0_15px_rgba(114,47,55,0.4)]" />
@@ -116,9 +118,6 @@ export function GallerySection() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center mt-14"
         >
-          <p className="text-white/30 text-sm tracking-widest uppercase">
-            Professional photos coming soon
-          </p>
           <div className="flex items-center justify-center gap-2 mt-5">
             {[1, 2, 3].map((i) => (
               <motion.div

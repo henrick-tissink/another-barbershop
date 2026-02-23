@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
@@ -8,6 +9,10 @@ import { GallerySection } from '@/components/sections/GallerySection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { siteConfig } from '@/data/siteConfig'
 import { services } from '@/data/services'
+
+type Props = {
+  params: Promise<{ locale: string }>
+}
 
 // JSON-LD Schema for Local Business SEO
 function LocalBusinessSchema() {
@@ -73,7 +78,12 @@ function LocalBusinessSchema() {
   )
 }
 
-export default function HomePage() {
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params
+
+  // Enable static rendering
+  setRequestLocale(locale)
+
   return (
     <>
       <LocalBusinessSchema />

@@ -1,10 +1,14 @@
 'use client'
 
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { siteConfig, navItems } from '@/data/siteConfig'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const t = useTranslations('footer')
+  const tNav = useTranslations('nav')
+  const tCommon = useTranslations('common')
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
@@ -34,8 +38,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              Simple. Clean. Professional.<br />
-              The kind of place you come back to.
+              {t('tagline')}<br />
+              {t('description')}
             </p>
 
             {/* Social links */}
@@ -82,7 +86,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs uppercase tracking-[0.25em] text-[var(--color-burgundy)] mb-6 font-semibold flex items-center gap-3">
               <span className="w-4 h-[2px] bg-[var(--color-burgundy)]" />
-              Navigate
+              {t('navigate')}
             </h4>
             <nav className="flex flex-col gap-3">
               {navItems.map((item) => (
@@ -92,7 +96,7 @@ export default function Footer() {
                   onClick={(e) => handleNavClick(e, item.href)}
                   className="text-white/50 hover:text-white transition-colors duration-300 text-sm"
                 >
-                  {item.label}
+                  {tNav(item.key)}
                 </a>
               ))}
             </nav>
@@ -102,7 +106,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs uppercase tracking-[0.25em] text-[var(--color-burgundy)] mb-6 font-semibold flex items-center gap-3">
               <span className="w-4 h-[2px] bg-[var(--color-burgundy)]" />
-              Contact
+              {t('contact')}
             </h4>
             <div className="space-y-4 text-sm">
               <div>
@@ -121,7 +125,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-[var(--color-burgundy)] hover:text-[var(--color-burgundy-light)] transition-colors duration-300 font-medium"
               >
-                Book Now
+                {tCommon('bookNow')}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
@@ -136,14 +140,14 @@ export default function Footer() {
         <div className="container mx-auto px-6 md:px-8 max-w-6xl py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/20 text-xs">
-              &copy; {currentYear} {siteConfig.name}. All rights reserved.
+              &copy; {currentYear} {siteConfig.name}. {t('rights')}
             </p>
 
             {/* The Steady Line signature */}
             <div className="flex items-center gap-4">
               <div className="w-8 h-[2px] bg-[var(--color-burgundy)] shadow-[0_0_8px_rgba(114,47,55,0.4)]" />
               <span className="text-white/30 text-xs tracking-widest uppercase">
-                Doing things right.
+                {t('signature')}
               </span>
               <div className="w-8 h-[2px] bg-[var(--color-burgundy)] shadow-[0_0_8px_rgba(114,47,55,0.4)]" />
             </div>
