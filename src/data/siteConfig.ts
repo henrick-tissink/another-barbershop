@@ -12,15 +12,15 @@ export const siteConfig: SiteConfig = {
   phone: '0779 260 568',
   whatsapp: 'https://wa.me/40779260568',
   social: {
-    instagram: 'https://instagram.com/anotherbarbershop.ro',
-    tiktok: undefined,
+    instagram: 'https://www.instagram.com/anotherbarbershop1',
+    tiktok: 'https://www.tiktok.com/@another.barbershop1',
   },
   hours: {
     weekdays: '10:00 - 20:00',
     saturday: '10:00 - 18:00',
     sunday: 'Closed',
   },
-  bookingUrl: 'https://mero.ro',
+  bookingUrl: 'https://mero.ro/p/another-barbershop',
   coordinates: {
     lat: 44.4378,
     lng: 26.0946,

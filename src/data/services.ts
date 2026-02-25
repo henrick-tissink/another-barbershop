@@ -1,40 +1,65 @@
 import type { Service } from '@/types'
 
 export const services: Service[] = [
+  // THE ESSENTIALS - quick decision services
   {
-    id: 'classic-haircut',
-    price: 80,
+    id: 'trim',
+    price: 50,
     currency: 'RON',
-    duration: 45,
+    duration: 15,
+    tier: 'essentials',
   },
   {
-    id: 'beard-trim',
+    id: 'styling',
+    price: 40,
+    currency: 'RON',
+    duration: 10,
+    tier: 'essentials',
+  },
+  {
+    id: 'beard',
     price: 50,
     currency: 'RON',
     duration: 30,
+    tier: 'essentials',
   },
   {
-    id: 'full-service',
+    id: 'haircut',
+    price: 95,
+    currency: 'RON',
+    duration: 35,
+    tier: 'essentials',
+  },
+
+  // THE EXPERIENCE - premium combos
+  {
+    id: 'hair-and-beard',
+    price: 130,
+    currency: 'RON',
+    duration: 60,
+    tier: 'experience',
+  },
+  {
+    id: 'medium-long-hair-beard',
+    price: 145,
+    currency: 'RON',
+    duration: 60,
+    tier: 'experience',
+  },
+  {
+    id: 'medium-long-haircut',
     price: 120,
     currency: 'RON',
     duration: 60,
+    tier: 'experience',
   },
   {
-    id: 'buzz-cut',
-    price: 50,
+    id: 'beard-trim',
+    price: 90,
     currency: 'RON',
-    duration: 20,
-  },
-  {
-    id: 'kids-cut',
-    price: 60,
-    currency: 'RON',
-    duration: 30,
-  },
-  {
-    id: 'hot-towel-shave',
-    price: 70,
-    currency: 'RON',
-    duration: 45,
+    duration: 40,
+    tier: 'experience',
   },
 ]
+
+export const bookingUrl = 'https://mero.ro/p/another-barbershop'

@@ -5,7 +5,7 @@ import { HeroSection } from '@/components/sections/HeroSection'
 import { AboutSection } from '@/components/sections/AboutSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
 import { TeamSection } from '@/components/sections/TeamSection'
-import { GallerySection } from '@/components/sections/GallerySection'
+import { VideoShowcaseSection } from '@/components/sections/VideoShowcaseSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { siteConfig } from '@/data/siteConfig'
 import { services } from '@/data/services'
@@ -95,7 +95,7 @@ export default async function HomePage({ params }: Props) {
         <AboutSection />
         <ServicesSection />
         <TeamSection />
-        <GallerySection />
+        <VideoShowcaseSection />
         <ContactSection />
       </main>
       <Footer />

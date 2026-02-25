@@ -68,6 +68,19 @@ export default function Footer() {
                   </svg>
                 </a>
               )}
+              {siteConfig.social.tiktok && (
+                <a
+                  href={siteConfig.social.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-[var(--color-burgundy)] hover:border-[var(--color-burgundy)]/50 transition-all duration-300"
+                  aria-label="Follow us on TikTok"
+                >
+                  <svg width="16" height="18" viewBox="0 0 16 18" fill="currentColor">
+                    <path d="M8.02 0h2.906c.128 1.296.63 2.41 1.51 3.342.878.933 2.023 1.487 3.432 1.663v2.898c-1.322-.066-2.52-.437-3.596-1.113v5.077c0 1.213-.31 2.33-.93 3.35a6.107 6.107 0 01-2.52 2.323c-1.06.56-2.218.84-3.475.84-1.737 0-3.254-.547-4.55-1.64C-.003 15.647.002 14.24.634 12.92c.632-1.32 1.674-2.28 3.125-2.878V13c-.793.373-1.342.886-1.647 1.54-.305.653-.323 1.32-.054 2 .27.68.748 1.2 1.437 1.56.688.36 1.413.467 2.175.32.762-.147 1.402-.507 1.92-1.08.517-.573.793-1.263.828-2.07l.01-9.16V0h-.408z"/>
+                  </svg>
+                </a>
+              )}
               <a
                 href={siteConfig.whatsapp}
                 target="_blank"

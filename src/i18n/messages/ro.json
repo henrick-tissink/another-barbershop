@@ -41,31 +41,42 @@
   "services": {
     "label": "Servicii",
     "title": "Ce oferim",
-    "description": "Servicii simple, executate impecabil. Fără compromisuri.",
+    "description": "Servicii simple, executate impecabil. Băuturile sunt pe noi.",
+    "essentials": "Esențial",
+    "experience": "Experiența",
+    "book": "Programare",
     "items": {
-      "classic-haircut": {
-        "name": "The Classic",
-        "description": "Consultație, tunsoare și styling. Experiența completă."
+      "haircut": {
+        "name": "Tunsoare",
+        "description": "Tunsoare, spălare și styling. Băuturile sunt pe noi."
+      },
+      "medium-long-haircut": {
+        "name": "Tunsoare Mediu/Lung",
+        "description": "Tunsoare, spălare și styling. Băuturile sunt pe noi."
+      },
+      "beard": {
+        "name": "Barbă",
+        "description": "Aranjare și conturare barbă. Băuturile sunt pe noi."
+      },
+      "hair-and-beard": {
+        "name": "Tunsoare & Barbă",
+        "description": "Pachet complet: tunsoare, barbă, spălare și styling."
+      },
+      "medium-long-hair-beard": {
+        "name": "Mediu/Lung & Barbă",
+        "description": "Pachet complet: tunsoare, barbă, spălare și styling."
+      },
+      "trim": {
+        "name": "Trim",
+        "description": "Buzz cut (o singură gardă) sau line-up. Băuturile sunt pe noi."
+      },
+      "styling": {
+        "name": "Styling",
+        "description": "Spălare și styling. Refresh rapid."
       },
       "beard-trim": {
-        "name": "Aranjare Barbă",
-        "description": "Conturare, linii precise și îngrijire. Curat și definit."
-      },
-      "full-service": {
-        "name": "Pachet Complet",
-        "description": "Tunsoare și barbă împreună. Cea mai populară alegere."
-      },
-      "buzz-cut": {
-        "name": "Buzz Cut",
-        "description": "Lucru precis cu mașina. Simplu. Făcut cum trebuie."
-      },
-      "kids-cut": {
-        "name": "Tunsoare Junior",
-        "description": "Pentru micii domni. Până la 12 ani."
-      },
-      "hot-towel-shave": {
-        "name": "Bărbierit cu Prosop Cald",
-        "description": "Brici tradițional. O experiență autentică."
+        "name": "Barbă & Trim",
+        "description": "Buzz cut (o singură gardă) și aranjare barbă. Băuturile sunt pe noi."
       }
     }
   },
@@ -79,10 +90,29 @@
       "barber": "Frizer"
     },
     "quotes": {
-      "alexandru": "Linii curate și conversație sinceră. Asta e formula.",
-      "mihai": "Fiecare client merită să plece simțindu-se pregătit pentru orice.",
-      "andrei": "Muzică bună, mâini sigure, fără grabă. Așa lucrăm aici.",
-      "radu": "Detaliile contează. Linia, degradeul, finisajul. Toate contează."
+      "ana": "Un deceniu de experiență înseamnă să știu exact ce ai nevoie.",
+      "mihi": "Fiecare client merită să plece simțindu-se pregătit pentru orice.",
+      "andrei": "Muzică bună, mâini sigure, fără grabă. Așa lucrăm aici."
+    }
+  },
+  "videos": {
+    "label": "Experiență",
+    "title": "Intră în atmosferă",
+    "description": "Vezi ce ne face diferiți.",
+    "watchWithSound": "Privește cu sunet",
+    "items": {
+      "atmosphere": {
+        "title": "Atmosfera",
+        "description": "Vibe-ul care te aduce înapoi."
+      },
+      "craft": {
+        "title": "Meseria",
+        "description": "Precizie în fiecare detaliu."
+      },
+      "team": {
+        "title": "Echipa",
+        "description": "Oamenii din spatele scaunului."
+      }
     }
   },
   "gallery": {

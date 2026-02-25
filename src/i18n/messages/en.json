@@ -41,31 +41,42 @@
   "services": {
     "label": "Services",
     "title": "What we offer",
-    "description": "Simple services, flawlessly executed. No compromises.",
+    "description": "Simple services, flawlessly executed. Drinks on us.",
+    "essentials": "The Essentials",
+    "experience": "The Experience",
+    "book": "Book",
     "items": {
-      "classic-haircut": {
-        "name": "The Classic",
-        "description": "Consultation, cut, and styling. The full experience."
+      "haircut": {
+        "name": "Haircut",
+        "description": "Cut, wash & styling. Drinks on us."
+      },
+      "medium-long-haircut": {
+        "name": "Medium/Long Haircut",
+        "description": "Cut, wash & styling. Drinks on us."
+      },
+      "beard": {
+        "name": "Beard",
+        "description": "Beard trim and shape-up. Drinks on us."
+      },
+      "hair-and-beard": {
+        "name": "Hair & Beard",
+        "description": "Full grooming: haircut, beard trim, wash & styling."
+      },
+      "medium-long-hair-beard": {
+        "name": "Medium/Long Hair & Beard",
+        "description": "Full grooming: haircut, beard trim, wash & styling."
+      },
+      "trim": {
+        "name": "Trim",
+        "description": "Buzz cut (single guard) or line-up. Drinks on us."
+      },
+      "styling": {
+        "name": "Styling",
+        "description": "Wash & styling. Quick refresh."
       },
       "beard-trim": {
-        "name": "Beard Work",
-        "description": "Shaping, lining, and conditioning. Sharp and clean."
-      },
-      "full-service": {
-        "name": "The Works",
-        "description": "Haircut and beard trim together. Our most popular choice."
-      },
-      "buzz-cut": {
-        "name": "Clean Buzz",
-        "description": "Precise clipper work. Simple. Done right."
-      },
-      "kids-cut": {
-        "name": "Junior Cut",
-        "description": "For the young gentlemen. Ages 12 and under."
-      },
-      "hot-towel-shave": {
-        "name": "Hot Towel Shave",
-        "description": "Traditional straight razor. A proper experience."
+        "name": "Beard & Trim",
+        "description": "Buzz cut (single guard) & beard trim. Drinks on us."
       }
     }
   },
@@ -79,10 +90,29 @@
       "barber": "Barber"
     },
     "quotes": {
-      "alexandru": "Clean lines and honest conversation. That's the formula.",
-      "mihai": "Every client deserves to walk out feeling ready for anything.",
-      "andrei": "Good music, steady hands, no rush. That's how we work here.",
-      "radu": "Details matter. The lineup, the blend, the finish. It all counts."
+      "ana": "A decade of experience means knowing exactly what you need.",
+      "mihi": "Every client deserves to walk out feeling ready for anything.",
+      "andrei": "Good music, steady hands, no rush. That's how we work here."
+    }
+  },
+  "videos": {
+    "label": "Experience",
+    "title": "Step Inside",
+    "description": "See what makes us different.",
+    "watchWithSound": "Watch with Sound",
+    "items": {
+      "atmosphere": {
+        "title": "The Atmosphere",
+        "description": "The vibe that keeps you coming back."
+      },
+      "craft": {
+        "title": "The Craft",
+        "description": "Precision in every detail."
+      },
+      "team": {
+        "title": "The Team",
+        "description": "The people behind the chair."
+      }
     }
   },
   "gallery": {

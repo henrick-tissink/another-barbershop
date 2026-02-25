@@ -1,8 +1,11 @@
+export type ServiceTier = 'essentials' | 'experience'
+
 export interface Service {
   id: string
   price: number
   currency: 'RON'
   duration?: number
+  tier: ServiceTier
 }
 
 export interface TeamMember {
@@ -19,6 +22,15 @@ export interface GalleryImage {
   src: string
   alt: string
   category: 'haircut' | 'beard' | 'atmosphere'
+}
+
+export interface Video {
+  id: string
+  src: string
+  poster: string
+  titleKey: string
+  descriptionKey: string
+  duration: number
 }
 
 export interface SiteConfig {
