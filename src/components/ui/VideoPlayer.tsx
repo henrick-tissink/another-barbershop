@@ -39,6 +39,7 @@ export function VideoPlayer({ video, isPlaying, onPlay, onEnded, playLabel }: Vi
   useEffect(() => {
     const videoEl = videoRef.current
     if (videoEl) {
+      videoEl.load()
       videoEl.currentTime = 0
       setProgress(0)
       setCurrentTime(0)
