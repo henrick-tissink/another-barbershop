@@ -17,11 +17,17 @@ export interface TeamMember {
   bookingUrl: string
 }
 
+export type GalleryCategory = 'interior' | 'details' | 'atmosphere' | 'personality';
+
 export interface GalleryImage {
-  id: string
-  src: string
-  alt: string
-  category: 'haircut' | 'beard' | 'atmosphere'
+  id: string;
+  src: string;
+  altKey: string;           // Translation key for i18n
+  category: GalleryCategory;
+  width: number;            // Required for CLS prevention
+  height: number;           // Required for CLS prevention
+  featured?: boolean;
+  priority?: boolean;       // For above-fold images
 }
 
 export interface Video {

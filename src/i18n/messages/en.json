@@ -9,6 +9,7 @@
     "about": "About",
     "services": "Services",
     "team": "Team",
+    "space": "Our Space",
     "gallery": "Gallery",
     "contact": "Contact"
   },
@@ -116,9 +117,42 @@
     }
   },
   "gallery": {
-    "label": "Gallery",
-    "title": "Our work",
-    "description": "Results that speak for themselves."
+    "label": "Our Space",
+    "title": "Our Space",
+    "subtitle": "Where craft meets comfort",
+    "categoriesLabel": "Filter by category",
+    "categories": {
+      "all": "All",
+      "interior": "Interior",
+      "details": "Details",
+      "atmosphere": "Atmosphere",
+      "personality": "Personality"
+    },
+    "images": {
+      "shopWide1": "Full interior view of Another Barbershop with vintage barber chairs",
+      "shopWide2": "Barbershop floor with globe pendant lights and oval mirrors",
+      "shopWide3": "Wide view from the counter showing the entire space",
+      "shopWide4": "Spacious interior with ceiling details",
+      "chairDetail1": "Classic barber chair with round mirror",
+      "chairDetail2": "Barber station with chair and waiting area",
+      "chairDetail3": "Two barber chairs in intimate setting",
+      "chairDetail4": "Row of chairs in dramatic perspective",
+      "chairDetail5": "Chairs viewed from above",
+      "chairDetail6": "Barber chairs with wash station",
+      "chairDetail7": "Counter reflection with globe lights",
+      "chairDetail8": "Chrome details on classic barber chair",
+      "waitingArea1": "Comfortable waiting area with black leather sofa and plants",
+      "waitingArea2": "Decorative vase with flowers on side table",
+      "conspiracyBoard1": "The famous conspiracy board - our quirky decor piece",
+      "conspiracyBoard2": "Angled view of the conspiracy board",
+      "storefront": "Another Barbershop storefront with logo and hours",
+      "ceilingReflection": "Artistic ceiling mirror reflection"
+    },
+    "noImages": "No images in this category"
+  },
+  "personality": {
+    "intro": "We take our craft seriously.",
+    "outro": "Just not ourselves."
   },
   "contact": {
     "label": "Contact",
@@ -132,6 +166,10 @@
     "sunday": "Sunday",
     "closed": "Closed",
     "mapTitle": "Another Barbershop Location"
+  },
+  "notFound": {
+    "message": "Looks like you've wandered off the grid.",
+    "backHome": "Back to Safety"
   },
   "footer": {
     "tagline": "Simple. Clean. Professional.",

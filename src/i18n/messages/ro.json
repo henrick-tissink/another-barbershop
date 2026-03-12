@@ -9,6 +9,7 @@
     "about": "Despre noi",
     "services": "Servicii",
     "team": "Echipa",
+    "space": "Spațiul Nostru",
     "gallery": "Galerie",
     "contact": "Contact"
   },
@@ -116,9 +117,42 @@
     }
   },
   "gallery": {
-    "label": "Galerie",
-    "title": "Lucrările noastre",
-    "description": "Rezultate care vorbesc de la sine."
+    "label": "Spațiul Nostru",
+    "title": "Spațiul Nostru",
+    "subtitle": "Unde meșteșugul întâlnește confortul",
+    "categoriesLabel": "Filtrează după categorie",
+    "categories": {
+      "all": "Toate",
+      "interior": "Interior",
+      "details": "Detalii",
+      "atmosphere": "Atmosferă",
+      "personality": "Personalitate"
+    },
+    "images": {
+      "shopWide1": "Vedere completă a interiorului Another Barbershop cu scaune vintage de frizerie",
+      "shopWide2": "Salonul de frizerie cu lustre glob și oglinzi ovale",
+      "shopWide3": "Vedere largă de la tejghea arătând întregul spațiu",
+      "shopWide4": "Interior spațios cu detalii de tavan",
+      "chairDetail1": "Scaun clasic de frizerie cu oglindă rotundă",
+      "chairDetail2": "Stație de frizerie cu scaun și zonă de așteptare",
+      "chairDetail3": "Două scaune de frizerie în ambianță intimă",
+      "chairDetail4": "Rând de scaune în perspectivă dramatică",
+      "chairDetail5": "Scaune văzute de sus",
+      "chairDetail6": "Scaune de frizerie cu stație de spălare",
+      "chairDetail7": "Reflexie la tejghea cu lustre glob",
+      "chairDetail8": "Detalii cromate pe scaunul clasic de frizerie",
+      "waitingArea1": "Zonă de așteptare confortabilă cu canapea neagră din piele și plante",
+      "waitingArea2": "Vază decorativă cu flori pe măsuța laterală",
+      "conspiracyBoard1": "Celebrul panou conspirativ - decorul nostru excentric",
+      "conspiracyBoard2": "Vedere unghiulară a panoului conspirativ",
+      "storefront": "Vitrina Another Barbershop cu logo și program",
+      "ceilingReflection": "Reflexie artistică în oglinda de tavan"
+    },
+    "noImages": "Nu există imagini în această categorie"
+  },
+  "personality": {
+    "intro": "Ne luăm meseria în serios.",
+    "outro": "Doar pe noi nu."
   },
   "contact": {
     "label": "Contact",
@@ -132,6 +166,10 @@
     "sunday": "Duminică",
     "closed": "Închis",
     "mapTitle": "Locația Another Barbershop"
+  },
+  "notFound": {
+    "message": "Se pare că ai rătăcit de pe hartă.",
+    "backHome": "Înapoi la siguranță"
   },
   "footer": {
     "tagline": "Simplu. Curat. Profesional.",

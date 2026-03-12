@@ -41,54 +41,55 @@ export function AboutSection() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column - Story */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6"
-          >
-            <p className="text-white/60 text-lg leading-relaxed">
-              {t('description')}
-            </p>
-
-            {/* Stats - more prominent */}
-            <div className="flex gap-16 pt-10 mt-4 border-t border-white/10">
-              <div>
-                <div className="text-5xl font-light text-[var(--color-burgundy)]">{t('experienceValue')}</div>
-                <div className="text-white/40 text-sm mt-2 tracking-wide">{t('experienceLabel')}</div>
-              </div>
-              <div>
-                <div className="text-5xl font-light text-[var(--color-burgundy)]">{t('clientsValue')}</div>
-                <div className="text-white/40 text-sm mt-2 tracking-wide">{t('clientsLabel')}</div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Right column - Pull quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex items-center"
-          >
-            <blockquote className="relative pl-8">
-              {/* The Steady Line - quote accent - thicker with glow */}
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[var(--color-burgundy)] shadow-[0_0_15px_rgba(114,47,55,0.5)]" />
-              <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white/80 leading-relaxed">
-                &ldquo;{t('description')}&rdquo;
+        <div className="max-w-3xl">
+          <div className="space-y-12">
+            {/* Story */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="space-y-6"
+            >
+              <p className="text-white/60 text-lg leading-relaxed">
+                {t('description')}
               </p>
-              <footer className="mt-8">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-[2px] bg-[var(--color-burgundy)]/50" />
-                  <span className="text-white/40 text-sm tracking-widest uppercase">
-                    Another Barbershop
-                  </span>
+
+              {/* Stats - more prominent */}
+              <div className="flex gap-16 pt-10 mt-4 border-t border-white/10">
+                <div>
+                  <div className="text-5xl font-light text-[var(--color-burgundy)]">{t('experienceValue')}</div>
+                  <div className="text-white/40 text-sm mt-2 tracking-wide">{t('experienceLabel')}</div>
                 </div>
-              </footer>
-            </blockquote>
-          </motion.div>
+                <div>
+                  <div className="text-5xl font-light text-[var(--color-burgundy)]">{t('clientsValue')}</div>
+                  <div className="text-white/40 text-sm mt-2 tracking-wide">{t('clientsLabel')}</div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Pull quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <blockquote className="relative pl-8">
+                {/* The Steady Line - quote accent - thicker with glow */}
+                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[var(--color-burgundy)] shadow-[0_0_15px_rgba(114,47,55,0.5)]" />
+                <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white/80 leading-relaxed">
+                  &ldquo;{t('description')}&rdquo;
+                </p>
+                <footer className="mt-8">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-[2px] bg-[var(--color-burgundy)]/50" />
+                    <span className="text-white/40 text-sm tracking-widest uppercase">
+                      Another Barbershop
+                    </span>
+                  </div>
+                </footer>
+              </blockquote>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

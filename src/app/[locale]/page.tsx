@@ -7,6 +7,8 @@ import { ServicesSection } from '@/components/sections/ServicesSection'
 import { TeamSection } from '@/components/sections/TeamSection'
 import { VideoShowcaseSection } from '@/components/sections/VideoShowcaseSection'
 import { ContactSection } from '@/components/sections/ContactSection'
+import { PersonalitySection } from '@/components/sections/PersonalitySection'
+import { GallerySection } from '@/components/sections/GallerySection'
 import { siteConfig } from '@/data/siteConfig'
 import { services } from '@/data/services'
 
@@ -39,7 +41,10 @@ async function LocalBusinessSchema({ locale }: { locale: string }) {
       latitude: siteConfig.coordinates.lat,
       longitude: siteConfig.coordinates.lng,
     },
-    image: 'https://anotherbarbershop.ro/images/og-image.jpg',
+    image: [
+      'https://anotherbarbershop.ro/images/og/storefront.png',
+      'https://anotherbarbershop.ro/images/gallery/originals/shop-wide-1.webp',
+    ],
     priceRange: '$$',
     openingHoursSpecification: [
       {
@@ -93,8 +98,10 @@ export default async function HomePage({ params }: Props) {
       <main>
         <HeroSection />
         <AboutSection />
+        <PersonalitySection />
         <ServicesSection />
         <TeamSection />
+        <GallerySection />
         <VideoShowcaseSection />
         <ContactSection />
       </main>

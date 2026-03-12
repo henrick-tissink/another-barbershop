@@ -69,7 +69,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
     { label: t('about'), href: '#about' },
     { label: t('services'), href: '#services' },
     { label: t('team'), href: '#team' },
-    { label: t('gallery'), href: '#gallery' },
+    { label: t('space'), href: '#space' },
     { label: t('contact'), href: '#contact' },
   ]
 

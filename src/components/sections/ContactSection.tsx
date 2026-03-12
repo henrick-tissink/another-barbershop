@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 import { siteConfig } from '@/data/siteConfig'
 
@@ -11,6 +12,7 @@ export function ContactSection() {
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' })
   const t = useTranslations('contact')
   const tCommon = useTranslations('common')
+  const tGallery = useTranslations('gallery')
 
   return (
     <section
@@ -23,6 +25,18 @@ export function ContactSection() {
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[var(--color-burgundy)]/30 to-transparent" />
 
       <div className="relative container mx-auto px-6 md:px-8 max-w-6xl">
+        {/* Storefront banner */}
+        <div className="relative h-48 md:h-64 mb-12 -mx-6 md:-mx-8 overflow-hidden">
+          <Image
+            src="/images/gallery/originals/storefront.webp"
+            alt={tGallery('images.storefront')}
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-[#111] to-transparent" />
+        </div>
+
         {/* Section header with The Steady Line */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
@@ -8,12 +9,26 @@ import { siteConfig } from '@/data/siteConfig'
 
 export function HeroSection() {
   const t = useTranslations('hero')
+  const [videoLoaded, setVideoLoaded] = useState(false)
+  const [videoError, setVideoError] = useState(false)
   const tCommon = useTranslations('common')
 
   return (
     <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0">
+        {/* Fallback image - shows while video loads or if video fails */}
+        {(!videoLoaded || videoError) && (
+          <Image
+            src="/images/gallery/originals/shop-wide-1.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        )}
+
         <video
           autoPlay
           muted
@@ -21,6 +36,8 @@ export function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
           poster="/images/hero-poster.jpg"
+          onLoadedData={() => setVideoLoaded(true)}
+          onError={() => setVideoError(true)}
         >
           <source src="/videos/hero-bg.mov" type="video/quicktime" />
           <source src="/videos/hero-bg.mp4" type="video/mp4" />
@@ -52,6 +69,7 @@ export function HeroSection() {
           alt={siteConfig.name}
           width={2088}
           height={622}
+          sizes="(max-width: 768px) 80vw, (max-width: 1024px) 65vw, 50vw"
           className="w-[80vw] md:w-[65vw] lg:w-[50vw] h-auto drop-shadow-2xl"
           priority
         />

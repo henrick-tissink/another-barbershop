@@ -68,10 +68,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t.description,
       images: [
         {
-          url: '/images/og-image.jpg',
+          url: '/images/og/storefront.png',
           width: 1200,
           height: 630,
-          alt: t.ogImageAlt,
+          alt: 'Another Barbershop - Premium barbershop in București',
         },
       ],
     },
@@ -79,6 +79,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: t.title,
       description: t.description,
+      images: ['/images/og/storefront.png'],
     },
     robots: {
       index: true,
