@@ -26,7 +26,7 @@ export function ContactSection() {
 
       <div className="relative container mx-auto px-6 md:px-8 max-w-6xl">
         {/* Storefront banner */}
-        <div className="relative h-48 md:h-64 mb-12 -mx-6 md:-mx-8 overflow-hidden">
+        <div className="relative h-56 md:h-80 mb-12 -mx-6 md:-mx-8 overflow-hidden">
           <Image
             src="/images/gallery/originals/storefront.webp"
             alt={tGallery('images.storefront')}
